@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An illustrated guide to making tomato and egg stir-fry.">
+    <title>TOMATO + EGG — A very simple dish</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="#top">T + E</a>
+      <a href="#ingredients">LET’S COOK ↗</a>
+    </header>
+    <main>
+      <section class="opening" id="top">
+        <h1>
+          <span class="title-tomato">TOMATO</span>
+          <span class="title-plus">+</span>
+          <span class="title-egg">EGG</span>
+        </h1>
+        <img class="hero-tomato" src="images/tomato.png" alt="Hand-painted red tomato">
+        <img class="hero-egg" src="images/egg.png" alt="Hand-painted ivory egg">
+        <div class="opening-bottom">
+          <a href="#ingredients">SCROLL TO COOK ↓</a>
+        </div>
+      </section>
+      <section id="ingredients" class="ingredients">
+        <div class="section-label">
+          <span>01 / INGREDIENTS</span>
+        </div>
+        <div class="catalog">
+          <figure tabindex="0">
+            <img src="images/tomato.png" alt="Whole tomato" loading="lazy">
+            <figcaption>
+              <span>TOMATO</span>
+              <span>2 MEDIUM</span>
+            </figcaption>
+          </figure>
+          <figure tabindex="0">
+            <img src="images/egg.png" alt="Whole egg" loading="lazy">
+            <figcaption>
+              <span>EGG</span>
+              <span>3 LARGE</span>
+            </figcaption>
+          </figure>
+          <figure tabindex="0">
+            <img src="images/oil.png" alt="Glass cruet of cooking oil" loading="lazy">
+            <figcaption>
+              <span>OIL</span>
+              <span>2 TBSP</span>
+            </figcaption>
+          </figure>
+          <figure tabindex="0">
+            <img src="images/salt.png" alt="Pinch bowl of salt" loading="lazy">
+            <figcaption>
+              <span>SALT</span>
+              <span>¼ TSP · TO TASTE</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="tiny">FOR TWO / ABOUT 15 MINUTES</p>
+      </section>
+      <section id="prepare">
+        <div class="section-label">
+          <span>02 / PREPARE</span>
+        </div>
+        <div class="split">
+          <div>
+            <h2>Make<br>the first <em>cut.</em></h2>
+            <p id="prepare-status" class="instruction" aria-live="polite">SCROLL TO CUT ↓</p>
+            <p class="detail">Wash 2 tomatoes and cut into wedges.</p>
+          </div>
+          <div class="prep-stage">
+            <img id="prep-whole" src="images/prepare-whole.png" alt="Whole tomato on the cutting board" loading="lazy">
+            <img id="prep-cut" src="images/prepare-cut.png" alt="Tomato wedges on the cutting board" loading="lazy">
+          </div>
+        </div>
+      </section>
+      <section id="crack">
+        <div class="section-label">
+          <span>03 / CRACK</span>
+        </div>
+        <div class="split reverse">
+          <div class="crack-stage">
+            <img id="egg-whole" src="images/egg.png" alt="Whole egg" loading="lazy">
+            <img id="egg-cracked" src="images/egg-cracked.png" alt="Cracked eggshells and a golden yolk" loading="lazy">
+          </div>
+          <div>
+            <h2>Crack 3 eggs.</h2>
+            <p id="crack-status" class="instruction" aria-live="polite">SCROLL TO CRACK ↓</p>
+            <p class="detail">Beat with a pinch of salt.</p>
+          </div>
+        </div>
+      </section>
+      <section id="heat">
+        <div class="heat-sticky">
+          <div class="section-label">
+            <span>04 / HEAT</span>
+          </div>
+          <div class="split">
+            <div>
+              <h2 id="heat-title">Low heat.</h2>
+              <p id="heat-instruction" class="instruction">SCROLL TO ADJUST ↓</p>
+              <div class="heat-steps" aria-hidden="true">
+                <span id="heat-low" class="active">LOW</span>
+                <span id="heat-high">HIGH</span>
+                <span id="heat-medium">MEDIUM</span>
+              </div>
+              <p id="heat-status" class="heat-status" aria-live="polite">TOO COLD</p>
+              <p class="detail">Add 1 tbsp oil to the pan.</p>
+            </div>
+            <div class="heat-stage">
+              <img class="pan" src="images/pan.png" alt="Empty skillet" loading="lazy">
+              <img id="fire" src="images/fire.png" alt="Low flame" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stir">
+        <div class="stir-sticky">
+          <div class="section-label">
+            <span>05 / STIR</span>
+          </div>
+          <div class="stir-heading">
+            <h2 id="stir-title">EGGS</h2>
+          </div>
+          <div class="stir-stage">
+            <img id="stir-eggs" src="images/eggs-cooked.png" alt="Soft scrambled eggs" loading="lazy">
+            <img id="stir-tomatoes" src="images/tomato-cut.png" alt="Cut tomatoes" loading="lazy">
+            <img id="stir-finished" src="images/tomato-egg.png" alt="Tomato and egg together" loading="lazy">
+          </div>
+          <p id="stir-detail" class="detail">Gently scramble until just set. Lift the eggs out.</p>
+          <div class="stir-track">
+            <span id="stir-progress"></span>
+          </div>
+        </div>
+      </section>
+      <section class="finish" id="finish">
+        <div class="section-label">
+          <span>06 / FINISH</span>
+        </div>
+        <h2>TOMATO <span>+</span> EGG</h2>
+        <img src="images/tomato-egg.png" alt="The finished tomato and egg dish" loading="lazy">
+        <a id="restart" href="#top">START AGAIN ↑</a>
+      </section>
+    </main>
+  </body>
+</html>
